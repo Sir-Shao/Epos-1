@@ -94,6 +94,7 @@ main  h1  {
 
 /* Form div */
 
+
 .container h1,
 .container p,
 .container label  {
@@ -138,6 +139,8 @@ main  h1  {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 10px;
+  margin-right: 60px;
 }
 
 .input-container  {
@@ -173,6 +176,8 @@ main  h1  {
 
 form textarea {
   font-size: 18px;
+  height: 450px;
+  resize: none;
 }
 
 .submit  {
