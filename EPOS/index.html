@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Resources/Styles/index.css" type="text/css" />
+    <link rel="icon" href="Resources/Photos/Background/title.webp" />
+    <script src="Resources/Scripts/index.js"></script>
+    <title>LMS - Catalog</title>
+  </head>
+  <body>
+    <!--HEADER-->
+
+    <header>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!--NASLOV-->
+      <img src="Resources/Photos/Background/title.webp" />
+      <!--SORTIRANJE-->
+      <div id="sort">
+        <form name="sortiranje"></form>
+        <select>
+          <option value="0" default>Sort By -</option>
+          <option value="1">Sort By &uarr;</option>
+          <option value="2">Sort By &darr;</option>
+        </select>
+      </div>
+    </header>
+
+    <!--MAIN-->
+
+    <main>
+      <nav>
+        <!--TIPOVI-->
+        <ul>
+          <li><button onclick="display(1);">ALL</button></li>
+          <li><button onclick="display(2);">AUDI</button></li>
+          <li><button onclick="display(3);">BMW</button></li>
+          <li>
+            <button onclick="display(4);">MERCEDES BENZ</button>
+          </li>
+          <li><button onclick="display(5);">PORSCHE</button></li>
+        </ul>
+      </nav>
+
+      <!--Flex-->
+      <div class="flex">
+        <!-- ##################### CAR 1 ###########################    car1brand car1brandImg car1img car1model car1price -->
+
+        <div class="car audi">
+          <div class="brand-flex">
+            <h3 id="car1brand">Audi</h3>
+            <!--Logo proizvodjaca-->
+            <img
+              class="brand-logo"
+              id="car1brandImg"
+              src="Resources/Photos/Logos/audi-logo.jpg"
+              alt=""
+            />
+          </div>
+          <!--Slika auta-->
+          <div class="img-holder">
+            <img
+              class="car-img"
+              id="car1img"
+              src="Resources/Photos/Cars/Audi-R8.jpg"
+              alt=""
+            />
+            <img
+              src="Resources/Photos/Cars/Audi-R8-1.jpg"
+              class="hidden"
+              alt=""
+              id="car1img1"
+            />
+            <img
+              src="Resources/Photos/Cars/Audi-R8-2.jpg"
+              class="hidden"
+              alt=""
+              id="car1img2"
+            />
+          </div>
+          <div class="car-info">
+            <h3 id="car1model">R8 V10</h3>
+
+            <a href="options.html" onclick="car(1);"
+              ><button class="cena" id="car1price">225.000 &euro;</button></a
+            >
+          </div>
+        </div>
+
+        <!-- ##################### CAR 2 ########################### -->
+
+        <div class="car mercedes">
+          <div class="brand-flex">
+            <h3 id="car2brand">Mercedes Benz</h3>
+            <!--Logo proizvodjaca-->
+            <img
+              class="brand-logo"
+              id="car2brandImg"
+              src="Resources/Photos/Logos/mercedes-logo.jpg"
+              alt=""
+            />
+          </div>
+          <!--Slika auta-->
+          <div class="img-holder">
+            <img
+              class="car-img"
+              id="car2img"
+              src="Resources/Photos/Cars/amg-gt.jpg"
+              alt=""
+            />
+            <img
+              src="Resources/Photos/Cars/Mercedes-Benz-AMG-GTR-Black-Series-1.jpg"
+              class="hidden"
+              alt=""
+              id="car2img1"
+            />
+            <img
+              src="Resources/Photos/Cars/Mercedes-Benz-AMG-GTR-Black-Series-2.jpg"
+              class="hidden"
+              alt=""
+              id="car2img2"
+            />
+          </div>
+
+          <div class="car-info">
+            <h3 id="car2model">AMG GTR Black Series</h3>
+            <a href="options.html" onclick="car(2);"
+              ><button class="cena" id="car2price">335.000 &euro;</button></a
+            >
+          </div>
+        </div>
+
+        <!-- ##################### CAR 3 ########################### -->
+
+        <div class="car bmw">
+          <div class="brand-flex">
+            <h3 id="car3brand">BMW</h3>
+            <!--Logo proizvodjaca-->
+            <img
+              class="brand-logo"
+              id="car3brandImg"
+              src="Resources/Photos/Logos/bmw-logo.jpg"
+              alt=""
+            />
+          </div>
+          <!--Slika auta-->
+          <div class="img-holder">
+            <img
+              class="car-img"
+              id="car3img"
+              src="Resources/Photos/Cars/BMW-M8-3.jpg"
+              alt=""
+            />
+            <img
+              src="Resources/Photos/Cars/BMW-M8-2.jpg"
+              class="hidden"
+              alt=""
+              id="car3img1"
+            />
+            <img
+              src="Resources/Photos/Cars/bmw-m8.jpg"
+              class="hidden"
+              alt=""
+              id="car3img2"
+            />
+          </div>
+
+          <div class="car-info">
+            <h3 id="car3model">M8 Competition</h3>
+            <a href="options.html" onclick="car(3)"
+              ><button class="cena" id="car3price">163.000 &euro;</button></a
+            >
+          </div>
+        </div>
+
+        <!-- ##################### CAR 4 ########################### -->
+
+        <div class="car porsche">
+          <div class="brand-flex">
+            <h3 id="car4brand">Porsche</h3>
+            <!--Logo proizvodjaca-->
+            <img
+              class="brand-logo"
+              id="car4brandImg"
+              src="Resources/Photos/Logos/porsche-logo.jpg"
+              alt=""
+            />
+          </div>
+          <!--Slika auta-->
+          <div class="img-holder">
+            <img
+              class="car-img"
+              id="car4img"
+              src="Resources/Photos/Cars/GT3-RS.jpg"
+              alt=""
+            />
+            <img
+              src="Resources/Photos/Cars/GT3-RS-1.jpg"
+              class="hidden"
+              alt=""
+              id="car4img1"
+            />
+            <img
+              src="Resources/Photos/Cars/GT3-RS-2.jpg"
+              class="hidden"
+              alt=""
+              id="car4img2"
+            />
+          </div>
+
+          <div class="car-info">
+            <h3 id="car4model">GT3 RS</h3>
+            <a href="options.html" onclick="car(4)"
+              ><button class="cena" id="car4price">225.000 &euro;</button></a
+            >
+          </div>
+        </div>
+
+        <!-- ##################### CAR 5 ########################### -->
+
+        <div class="car audi">
+          <div class="brand-flex">
+            <h3 id="car5brand">Audi</h3>
+            <!--Logo proizvodjaca-->
+            <img
+              class="brand-logo"
+              id="car5brandImg"
+              src="Resources/Photos/Logos/audi-logo.jpg"
+              alt=""
+            />
+          </div>
+          <!--Slika auta-->
+          <div class="img-holder">
+            <img
+              class="car-img"
+              id="car5img"
+              src="Resources/Photos/Cars/AUDI-Q8.jpg"
+              alt=""
+            />
+            <img
+              src="Resources/Photos/Cars/AUDI-Q8-2.jpg"
+              class="hidden"
+              alt=""
+              id="car5img1"
+            />
+            <img
+              src="Resources/Photos/Cars/AUDI-Q8-3.jpg"
+              class="hidden"
+              alt=""
+              id="car5img2"
+            />
+          </div>
+
+          <div class="car-info">
+            <h3 id="car5model">Q8</h3>
+            <a href="options.html" onclick="car(5)"
+              ><button class="cena" id="car5price">75.000 &euro;</button></a
+            >
+          </div>
+        </div>
+
+        <!-- ##################### CAR 6 ########################### -->
+
+        <div class="car bmw">
+          <div class="brand-flex">
+            <h3 id="car6brand">BMW</h3>
+            <!--Logo proizvodjaca-->
+            <img
+              class="brand-logo"
+              id="car6brandImg"
+              src="Resources/Photos/Logos/bmw-logo.jpg"
+              alt=""
+            />
+          </div>
+          <!--Slika auta-->
+          <div class="img-holder">
+            <img
+              class="car-img"
+              id="car6img"
+              src="Resources/Photos/Cars/BMW-X6.jpg"
+              alt=""
+            />
+            <img
+              src="Resources/Photos/Cars/BMW-X6-2.jpg"
+              class="hidden"
+              alt=""
+              id="car6img1"
+            />
+            <img
+              src="Resources/Photos/Cars/BMW X6-3.jpg"
+              class="hidden"
+              alt=""
+              id="car6img2"
+            />
+          </div>
+
+          <div class="car-info">
+            <h3 id="car6model">X6</h3>
+            <a href="options.html" onclick="car(6)"
+              ><button class="cena" id="car6price">125.000 &euro;</button></a
+            >
+          </div>
+        </div>
+
+        <!-- ##################### CAR 7 ########################### -->
+
+        <div class="car porsche">
+          <div class="brand-flex">
+            <h3 id="car7brand">Porsche</h3>
+            <!--Logo proizvodjaca-->
+            <img
+              class="brand-logo"
+              id="car7brandImg"
+              src="Resources/Photos/Logos/porsche-logo.jpg"
+              alt=""
+            />
+          </div>
+          <!--Slika auta-->
+          <div class="img-holder">
+            <img
+              class="car-img"
+              id="car7img"
+              src="Resources/Photos/Cars/PORSCHE-MACAN.jpg"
+              alt=""
+            />
+            <img
+              src="Resources/Photos/Cars/PORSCHE-MACAN-2.jpg"
+              class="hidden"
+              alt=""
+              id="car7img1"
+            />
+            <img
+              src="Resources/Photos/Cars/PORSCHE-MACAN-3.jpg"
+              class="hidden"
+              alt=""
+              id="car7img2"
+            />
+          </div>
+
+          <div class="car-info">
+            <h3 id="car7model">Macan</h3>
+            <a href="options.html" onclick="car(7)"
+              ><button class="cena" id="car7price">75.000 &euro;</button></a
+            >
+          </div>
+        </div>
+
+        <!-- ##################### CAR 8 ########################### -->
+
+        <div class="car mercedes">
+          <div class="brand-flex">
+            <h3 id="car8brand">Mercedes Benz</h3>
+            <!--Logo proizvodjaca-->
+            <img
+              class="brand-logo"
+              id="car8brandImg"
+              src="Resources/Photos/Logos/mercedes-logo.jpg"
+              alt=""
+            />
+          </div>
+          <!--Slika auta-->
+          <div class="img-holder">
+            <img
+              class="car-img"
+              id="car8img"
+              src="Resources/Photos/Cars/MERCEDES-BENZ-MAYBACH-S.jpg"
+              alt=""
+            />
+            <img
+              src="Resources/Photos/Cars/MERCEDES-BENZ-MAYBACH-S-2.jpg"
+              class="hidden"
+              alt=""
+              id="car8img1"
+            />
+            <img
+              src="Resources/Photos/Cars/MERCEDES-BENZ-MAYBACH-S-3.jpg"
+              class="hidden"
+              alt=""
+              id="car8img2"
+            />
+          </div>
+
+          <div class="car-info">
+            <h3 id="car8model">Maybach S</h3>
+            <a href="options.html" onclick="car(8)"
+              ><button class="cena" id="car8price">180.000 &euro;</button></a
+            >
+          </div>
+        </div>
+
+        <!-- ##################### CAR 9 ########################### -->
+
+        <div class="car porsche">
+          <div class="brand-flex">
+            <h3 id="car9brand">Porsche</h3>
+            <!--Logo proizvodjaca-->
+            <img
+              class="brand-logo"
+              id="car9brandImg"
+              src="Resources/Photos/Logos/porsche-logo.jpg"
+              alt=""
+            />
+          </div>
+          <!--Slika auta-->
+          <div class="img-holder">
+            <img
+              class="car-img"
+              id="car9img"
+              src="Resources/Photos/Cars/PORSCHE-PANAMERA-TURBO-S.jpg"
+              alt=""
+            />
+            <img
+              src="Resources/Photos/Cars/PORSCHE-PANAMERA-TURBO-S-1.jpg"
+              class="hidden"
+              alt=""
+              id="car9img1"
+            />
+            <img
+              src="Resources/Photos/Cars/PORSCHE-PANAMERA-TURBO-S-2.jpg"
+              class="hidden"
+              alt=""
+              id="car9img2"
+            />
+          </div>
+
+          <div class="car-info">
+            <h3 id="car9model">Panamera Turbo S</h3>
+            <a href="options.html" onclick="car(9)"
+              ><button class="cena" id="car9price">170.000 &euro;</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
