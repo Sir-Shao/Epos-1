@@ -275,9 +275,42 @@ function display(n) {
     }
 }
 
+/* SORTIRANJE */
 
-
-
+document.addEventListener("DOMContentLoaded", function () {
+    // Function to sort the cars based on the specified order (1 for ascending, 2 for descending)
+    function sortCars(order) {
+      const carContainer = document.querySelector('.flex');
+      const cars = Array.from(carContainer.querySelectorAll('.car'));
+  
+      // Create an array of objects with car element and corresponding number
+      const carArray = cars.map(car => ({
+        element: car,
+        number: parseInt(car.getAttribute('data-number'))
+      }));
+  
+      // Sort the array based on the numbers and the specified order
+      if (order === 1) {
+        carArray.sort((a, b) => a.number - b.number);
+      } else if (order === 2) {
+        carArray.sort((a, b) => b.number - a.number);
+      }
+  
+      // Clear the container
+      carContainer.innerHTML = '';
+  
+      // Append the sorted cars back to the container
+      carArray.forEach(car => carContainer.appendChild(car.element));
+    }
+  
+    // Event listener for the sort select element
+    const sortSelect = document.querySelector('select');
+    sortSelect.addEventListener('change', function () {
+      const sortOrder = parseInt(this.value);
+      sortCars(sortOrder);
+    });
+  });
+  
 
 
 
