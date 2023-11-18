@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Resources/Styles/contact.css" />
+    <script src="Resources/Scripts/contact.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!--NASLOV-->
+      <img src="Resources/Photos/Background/title.webp" />
+    </header>
+    <main>
+      <div class="container">
+        <h1>CONTACT US</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+          expedita recusandae exercitationem delectus quam nulla aut, ullam iste
+          sunt suscipit repudiandae eaque velit cumque blanditiis dolorem alias
+          nisi adipisci autem.
+        </p>
+        <form name="form" class="form-flex">
+          <div class="input-container">
+            <div class="label-container">
+              <label for="name">Name</label>
+            </div>
+            <input type="text" id="name" placeholder="Name" size="40" />
+          </div>
+          <div class="input-container">
+            <div class="label-container">
+              <label for="email">Email</label>
+            </div>
+            <input
+              type="email"
+              id="email"
+              placeholder="Please use a real email"
+              size="40"
+              required
+            />
+          </div>
+          <div class="input-container">
+            <div class="label-container">
+              <label for="subject">Subject</label>
+            </div>
+            <input
+              type="text"
+              id="subject"
+              placeholder="Subject"
+              size="40"
+              required
+            />
+          </div>
+          <div class="input-container">
+            <div class="label-container">
+              <label for="message">Message</label>
+            </div>
+            <textarea
+              name="text"
+              id="message"
+              cols="39"
+              rows="25"
+              placeholder="Write us a message"
+            ></textarea>
+          </div>
+          <button id="button" class="submit" onclick="get();">Send</button>
+          <a id="link" href="#" class="invisible"></a>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
