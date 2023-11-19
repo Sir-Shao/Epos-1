@@ -20,22 +20,29 @@ function car(){
 }
 
 function buy()  {
-
+    var siteBackground = document.getElementById('background');
+    siteBackground.style.display = "block";
+    var Alert = document.getElementById('alert');
+    Alert.style.display = 'flex';
     var carBrand = localStorage.getItem('carBrandStored');
-    var writeBrand = document.getElementById('car-brand');
     var carModel = localStorage.getItem('carModelStored');
+    var modelHolder = document.getElementById('car-model');
+    var colorHolder = document.getElementById('car-color');
+    var priceHolder = document.getElementById('total-price');
+    var color = document.Form.color.value;
+    var price = document.getElementById('car-price').textContent;
+    var mazelTov = document.getElementById('boban');
+    var details = document.getElementById('zoki');
 
-    writeBrand.textContent = carBrand + ' ' + carModel;
+    mazelTov.textContent= "We congratulate you on your recent purchase of the stunning " + carBrand + ' ' + carModel + " from Legendary Motorsport. Your choice of the color " + color + " truly adds a touch of elegance to this exceptional vehicle.";
+    details.textContent="Here are the details of your purchase:";
+    modelHolder.textContent = "Model: " + carBrand + ' ' + carModel;
+    colorHolder.textContent = "Color: " + color;
+    priceHolder.textContent = "Total Cost: " + price;
 
-    var color = document.Form.color.value
+}
 
-    var price = document.getElementById('car-price').textContent
-
-    alert("Receipt:\n\n\nModel: " + writeBrand.textContent +
-          "\n\n\nColor: " + color + 
-          "\n\n\nTotal: " + price)
-
-    var Link = document.getElementById('next')
-
+function ok()   {
+    var Link = document.getElementById('next');
     Link.click()
 }

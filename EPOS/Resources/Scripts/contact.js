@@ -7,7 +7,7 @@ function get()  {
 
   var email = document.getElementById('email');
 
-  var newLinkHref = "mailto:majal@parnas.rs" +
+  var newLinkHref = "mailto:ml20230520@student.fon.bg.ac.rs" +
                 "?subject=" + subject +
                 "&body=" + msg;
 
