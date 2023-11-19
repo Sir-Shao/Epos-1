@@ -41,6 +41,9 @@ header img{
   width: auto;
   position: relative;
   top: 25%;
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .menu {
@@ -139,7 +142,6 @@ main  h1  {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .input-container  {
@@ -197,4 +199,9 @@ form textarea {
 
 .invisible  {
   display: none;
+}
+
+@keyframes appear {
+  from{opacity: 0;}
+  to{opacity: 1;}
 }

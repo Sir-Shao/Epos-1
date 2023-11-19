@@ -43,6 +43,9 @@ header img  {
   width: auto;
   position: relative;
   top: 25%;
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 #sort {
@@ -218,4 +221,9 @@ main nav button:hover  {
 .menu ul a:hover{
   background-color: white;
   color:black;
+}
+
+@keyframes appear {
+  from{opacity: 0;}
+  to{opacity: 1;}
 }
