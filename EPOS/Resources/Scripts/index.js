@@ -12,12 +12,15 @@ function car(n){
 
             var imageUrl = document.getElementById('car1img').src;
             localStorage.setItem('carImageStored', imageUrl);
+            imageUrl.alt = brand + ' ' + model;
 
             var imageUrl1 = document.getElementById('car1img1').src;
             localStorage.setItem('carImageStored1', imageUrl1);
+            imageUrl11.alt = brand + ' ' + model;                    imageUrl.alt = brand + ' ' + model;
 
             var imageUrl2 = document.getElementById('car1img2').src;
             localStorage.setItem('carImageStored2', imageUrl2);
+            imageUrl2.alt = brand + ' ' + model;
             
             var price = document.getElementById('car1price').textContent;
             localStorage.setItem('carPriceStored', price);
@@ -47,12 +50,15 @@ function car(n){
 
             var imageUrl = document.getElementById('car2img').src;
             localStorage.setItem('carImageStored', imageUrl);
+            imageUrl.alt = brand + ' ' + model;
 
             var imageUrl1 = document.getElementById('car2img1').src;
             localStorage.setItem('carImageStored1', imageUrl1);
+            imageUrl1.alt = brand + ' ' + model;
 
             var imageUrl2 = document.getElementById('car2img2').src;
             localStorage.setItem('carImageStored2', imageUrl2);
+            imageUrl2.alt = brand + ' ' + model;
             
             var price = document.getElementById('car2price').textContent;
             localStorage.setItem('carPriceStored', price);
@@ -81,12 +87,16 @@ function car(n){
 
             var imageUrl = document.getElementById('car3img').src;
             localStorage.setItem('carImageStored', imageUrl);
+            imageUrl.alt = brand + ' ' + model;
+
             
             var imageUrl1 = document.getElementById('car3img1').src;
             localStorage.setItem('carImageStored1', imageUrl1);
+            imageUrl1.alt = brand + ' ' + model;
 
             var imageUrl2 = document.getElementById('car3img2').src;
             localStorage.setItem('carImageStored2', imageUrl2);
+            imageUrl2.alt = brand + ' ' + model;
             
             var price = document.getElementById('car3price').textContent;
             localStorage.setItem('carPriceStored', price);
@@ -115,12 +125,16 @@ function car(n){
 
             var imageUrl = document.getElementById('car4img').src;
             localStorage.setItem('carImageStored', imageUrl);
+            imageUrl.alt = brand + ' ' + model;
+
 
             var imageUrl1 = document.getElementById('car4img1').src;
             localStorage.setItem('carImageStored1', imageUrl1);
+            imageUrl1.alt = brand + ' ' + model;
 
             var imageUrl2 = document.getElementById('car4img2').src;
             localStorage.setItem('carImageStored2', imageUrl2);
+            imageUrl2.alt = brand + ' ' + model;
             
             var price = document.getElementById('car4price').textContent;
             localStorage.setItem('carPriceStored', price);
@@ -149,12 +163,16 @@ function car(n){
 
             var imageUrl = document.getElementById('car5img').src;
             localStorage.setItem('carImageStored', imageUrl);
+            imageUrl.alt = brand + ' ' + model;
+
 
             var imageUrl1 = document.getElementById('car5img1').src;
             localStorage.setItem('carImageStored1', imageUrl1);
+            imageUrl1.alt = brand + ' ' + model;
 
             var imageUrl2 = document.getElementById('car5img2').src;
             localStorage.setItem('carImageStored2', imageUrl2);
+            imageUrl2.alt = brand + ' ' + model;
             
             var price = document.getElementById('car5price').textContent;
             localStorage.setItem('carPriceStored', price);
@@ -183,9 +201,12 @@ function car(n){
 
             var imageUrl = document.getElementById('car6img').src;
             localStorage.setItem('carImageStored', imageUrl);
+            imageUrl.alt = brand + ' ' + model;
+
             
             var imageUrl1 = document.getElementById('car6img1').src;
             localStorage.setItem('carImageStored1', imageUrl1);
+            imageUrl1.alt = brand + ' ' + model;
 
             var imageUrl2= document.getElementById('car6img2').src;
             localStorage.setItem('carImageStored2', imageUrl2);
@@ -217,12 +238,16 @@ function car(n){
 
             var imageUrl = document.getElementById('car7img').src;
             localStorage.setItem('carImageStored', imageUrl);
+            imageUrl.alt = brand + ' ' + model;
+
 
             var imageUrl1 = document.getElementById('car7img1').src;
             localStorage.setItem('carImageStored1', imageUrl1);
+            imageUrl1.alt = brand + ' ' + model;
 
             var imageUrl2 = document.getElementById('car7img2').src;
             localStorage.setItem('carImageStored2', imageUrl2);
+            imageUrl2.alt = brand + ' ' + model;
             
             var price = document.getElementById('car7price').textContent;
             localStorage.setItem('carPriceStored', price);
@@ -251,12 +276,16 @@ function car(n){
 
             var imageUrl = document.getElementById('car8img').src;
             localStorage.setItem('carImageStored', imageUrl);
+            imageUrl.alt = brand + ' ' + model;
+
 
             var imageUrl1 = document.getElementById('car8img1').src;
             localStorage.setItem('carImageStored1', imageUrl1);
+            imageUrl1.alt = brand + ' ' + model;
 
             var imageUrl2 = document.getElementById('car8img2').src;
             localStorage.setItem('carImageStored2', imageUrl2);
+            imageUrl2.alt = brand + ' ' + model;
             
             var price = document.getElementById('car8price').textContent;
             localStorage.setItem('carPriceStored', price);
@@ -285,12 +314,16 @@ function car(n){
 
             var imageUrl = document.getElementById('car9img').src;
             localStorage.setItem('carImageStored', imageUrl);
+            imageUrl.alt = brand + ' ' + model;
+
 
             var imageUrl1 = document.getElementById('car9img1').src;
             localStorage.setItem('carImageStored1', imageUrl1);
+            imageUrl1.alt = brand + ' ' + model;
 
             var imageUrl2 = document.getElementById('car9img2').src;
             localStorage.setItem('carImageStored2', imageUrl2);
+            imageUrl2.alt = brand + ' ' + model;
             
             var price = document.getElementById('car9price').textContent;
             localStorage.setItem('carPriceStored', price);
