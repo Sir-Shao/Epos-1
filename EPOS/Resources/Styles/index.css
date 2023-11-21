@@ -195,6 +195,7 @@ main nav button:hover  {
   background-color: black;
   height: 60px;
   width: 100%;
+  padding: 10px 0;
   position: fixed;
   z-index: 1;
   border-bottom: 1px solid red;
@@ -226,4 +227,208 @@ main nav button:hover  {
 @keyframes appear {
   from{opacity: 0;}
   to{opacity: 1;}
+}
+
+/*Media Queries*/
+
+
+
+@media all and (min-width: 720px) and (max-width: 1024px) {
+  header  {
+    height: 16%;
+    background-size: cover;
+    background-position-y: 51%;
+  }
+  main  {
+    margin: 0 auto;
+    width: 90%;
+  }
+  body  {
+    background-size: 70%;
+  }
+  header  {
+    justify-content: unset;
+  }
+  header img  {
+    width: 70%;
+    aspect-ratio: 1.777777/1;
+  }
+  #sort {
+    width: 20%;
+    justify-content: unset;
+    flex: 1;
+  }
+  #sort select  {
+    width: 100%;
+  }
+  .flex {
+    justify-content: space-around;
+  }
+  .car  {
+    width: 45%;
+  }  
+  main nav ul {
+    padding: 0;
+  }
+  main nav ul li  {
+    flex: 1;
+    text-align: center;
+  }
+  main nav button {
+    width: 90%;
+  }
+  .car  {
+    background-color: black;
+  }
+  .brand-flex {
+    background-color: white;
+  }
+  .car-info {
+    flex: 1;
+  }
+  .menu nav ul {
+    padding: 0;
+  }
+  .menu nav ul li  {
+    flex: 1;
+    text-align: center;
+  }
+  .menu nav button {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1440px) {
+  header  {
+    height: 16%;
+    background-size: cover;
+    background-position-y: 67%;
+  }
+  .car  {
+    width: 45%;
+  }
+  header img  {
+    height: 75%;
+  }
+  main nav ul {
+    padding: 0;
+  }
+  main nav ul li  {
+    flex: 1;
+    text-align: center;
+  }
+  main nav button {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 1441px) and (max-width: 2560px)  {
+
+  header  {
+    height: 30%;
+    background-size: cover;
+    background-position-y: 55%;
+  }
+  header img  {
+    width: 45%;
+    aspect-ratio: 1.7777/1;
+    top: 35%;
+  }
+  #sort select  {
+    width: 300px;
+    margin: 0 180px 40px 0;
+  }
+  .car  {
+    background-color: black;
+  }
+  .brand-flex {
+    background-color: white;
+  }
+  .car-info {
+    flex: 1;
+  }
+  main nav ul {
+    padding: 0;
+  }
+  main nav button {
+    font-size: 20px;
+  }
+  main nav ul li  {
+    flex: 1;
+    text-align: center;
+  }
+  main nav button {
+    width: 90%;
+  }
+}
+
+@media all and (min-with: 1981px) {
+  .menu {
+    height: 100px;
+    width: 100%;
+  }
+  .menu ul a {
+    font-size: 22px;
+    padding: 15px 100px;
+  }
+  .menu ul  {
+    padding: 0;
+  }
+}
+
+/* Burger*/
+
+.burger-menu {
+  display: none; 
+  font-size: 24px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-title {
+  display: none;
+}
+
+
+@media all and (max-width: 1024px) {
+  .burger-menu {
+    display: block; 
+    z-index: 2;
+  }
+
+  .menu {
+    height: 75px;
+  }
+
+  .burger-title {
+    display: block;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .menu ul.show {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 95px; 
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .menu ul li {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid maroon;
+  }
 }

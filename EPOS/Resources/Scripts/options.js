@@ -17,6 +17,13 @@ function car(){
 
     var carPrice = localStorage.getItem('carPriceStored');
     document.getElementById('car-price').textContent = carPrice;
+
+    document.getElementById('top-speed').textContent = localStorage.getItem('topSpeedStored');
+    document.getElementById('acceleration').textContent = localStorage.getItem('accelerationStored');
+    document.getElementById('brakes').textContent = localStorage.getItem('brakingStored');
+
+
+    document.getElementById('car-info').textContent = localStorage.getItem('carTextStored'); 
 }
 
 function buy()  {
